@@ -19,7 +19,11 @@ The
 Enviroment solved in @ i_episode=224, w/ avg_score=30.14
 
 The agents were able to solve task in 224 episodes with an average score of 30.14 as well as final average score of 34.73 after 250 episodes.
+
+
 ![scores_vs_episodes_linear](scores_vs_episodes_linear.png)
+
+
 ![scores_vs_episodes_semilogy](scores_vs_episodes_semilogy.png)
 
 
