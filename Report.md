@@ -1,4 +1,4 @@
-
+# Report 
 
 
 ## Problem Statement
@@ -9,12 +9,25 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ## Methodology
 This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to the 20 agents Reacher environment, as described in [_Continuous Control with Deep Reinforcement Learning_][ddpg-paper] (Lillicrap et al). 
+- [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
+
+## Hyperparameter optimization 
+The 
 
 
-# References:
+## Results 
+Enviroment solved in @ i_episode=224, w/ avg_score=30.14
+
+The agents were able to solve task in 224 episodes with an average score of 30.14 as well as final average score of 34.73 after 250 episodes.
+![scores_vs_episodes_linear](scores_vs_episodes_linear.png)
+![scores_vs_episodes_semilogy](scores_vs_episodes_semilogy.png)
+
+
+
+
+## References:
 - <https://sergioskar.github.io/Actor_critics/>
 - <https://arxiv.org/pdf/1611.02247.pdf> 
-
-- [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
-- [ddpg-repo]: https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/DDPG.ipynb
+- <https://arxiv.org/pdf/1509.02971.pdf>
+- <https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/DDPG.ipynb>
 
