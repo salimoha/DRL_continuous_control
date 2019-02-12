@@ -1,7 +1,7 @@
 
 # Training Code
 1. The submission includes the saved model weights of the successful agent.
-- [ ]  Please submit the weights of the successful agent.
+- [x]  Please submit the weights of the successful agent.
 
 # Report 
 1.  The submission includes a file in the root of the GitHub repository (one of Report.md, Report.ipynb, or Report.pdf) that provides a description of the implementation.
