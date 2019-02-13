@@ -27,6 +27,12 @@ The agents were able to solve task in 224 episodes with an average score of 30.1
 ![scores_vs_episodes_semilogy](scores_vs_episodes_semilogy.png)
 
 
+## Future work
+
+The hyperparameter optimization is a blackbox optimizaiton fuction. In order to find the hyperparameters of an unknown function we can use [ Delaunay-based Derivative-free Optimization via Global Surrogates ][dogs] or [ deltaDOGS ][alimo-2017]. 
+
+- [dogs]: https://github.com/deltadogs
+- [alimo-2017] http://fccr.ucsd.edu/pubs/abmb17.pdf
 
 
 ## References:
@@ -34,4 +40,5 @@ The agents were able to solve task in 224 episodes with an average score of 30.1
 - <https://arxiv.org/pdf/1611.02247.pdf> 
 - <https://arxiv.org/pdf/1509.02971.pdf>
 - <https://github.com/udacity/deep-reinforcement-learning/blob/master/ddpg-bipedal/DDPG.ipynb>
-
+- <http://fccr.ucsd.edu/pubs/abmb17.pdf>
+- <https://github.com/deltadogs>
