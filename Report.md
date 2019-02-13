@@ -11,8 +11,15 @@ The observation space consists of 33 variables corresponding to position, rotati
 This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to the 20 agents Reacher environment, as described in [_Continuous Control with Deep Reinforcement Learning_][ddpg-paper] (Lillicrap et al). 
 - [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
 
+DDPG also employs Actor-Critic model in which the Critic model learns the value function like DQN and uses it to determine how the Actor’s policy based model should change. The Actor brings the advantage of learning in continuous actions space without the need for extra layer of optimization procedures required in a value based function while the Critic supplies the Actor with knowledge of the performance.
+
 For each time step and agent the Agent acts upon the state utilising a shared (at class level) `replay_buffer`, `actor_local`, `actor_target`, `actor_optimizer`, `critic_local`, `criticl_target` and `critic_optimizer` networks.
 
+## Nueral Network 
+The DDGP can be considered as actor-critic method, and in this work we have following architectures:
+
+- Actor: 256 -> 256
+- Critic: 256 -> 256 -> 128
 
 ## Hyperparameters 
 ### DDPG Hyperparameters
@@ -59,6 +66,9 @@ We found that the DRL is not plug and play like other DL frameworks.
 To find the optimal set of hyperparameter we can leverage dertivative-free optimiation schemes. The hyperparameter optimization is a blackbox optimizaiton fuction. In order to find the hyperparameters of an unknown function and improving results tunning the networks scructures (adding layers or units per layers, ...), we can use [ Delaunay-based Derivative-free Optimization via Global Surrogates ][dogs] or [ deltaDOGS ][alimo-2017] (Alimo et al). 
 
 Furtheremore, the implementation of Proximal Policy Optimization (PPO) and Distributed Distributional Deterministic Policy Gradients (D4PG) methods could be explored to achieve better performance results. 
+
+Finally, we can perform some experiments with the agents including: 1) Prioritization for replay buffer, 2) Addition of noise in the paramter space to help the global exploration, and 3) Applying different replay buffer for each agent.
+
 
 
 [dogs]: https://github.com/deltadogs
