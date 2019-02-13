@@ -31,8 +31,8 @@ The agents were able to solve task in 224 episodes with an average score of 30.1
 
 The hyperparameter optimization is a blackbox optimizaiton fuction. In order to find the hyperparameters of an unknown function we can use [ Delaunay-based Derivative-free Optimization via Global Surrogates ][dogs] or [ deltaDOGS ][alimo-2017]. 
 
-- [dogs]: https://github.com/deltadogs
-- [alimo-2017] http://fccr.ucsd.edu/pubs/abmb17.pdf
+[dogs]: https://github.com/deltadogs
+[alimo-2017]: http://fccr.ucsd.edu/pubs/abmb17.pdf
 
 
 ## References:
