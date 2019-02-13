@@ -9,7 +9,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ## Methodology
 This work implements the DDPG algorithm (Deep Deterministic Policy Gradients) to the 20 agents Reacher environment, as described in [_Continuous Control with Deep Reinforcement Learning_][ddpg-paper] (Lillicrap et al). 
-- [ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
+[ddpg-paper]: https://arxiv.org/pdf/1509.02971.pdf
 
 DDPG also employs Actor-Critic model in which the Critic model learns the value function like DQN and uses it to determine how the Actor’s policy based model should change. The Actor brings the advantage of learning in continuous actions space without the need for extra layer of optimization procedures required in a value based function while the Critic supplies the Actor with knowledge of the performance.
 
